@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping
 class HtmlController {
 
   @GetMapping("/")
-  fun tachiyomi(model: Model): String {
+  fun home(model: Model): String {
     model["title"] = "Home"
     return "home"
   }
